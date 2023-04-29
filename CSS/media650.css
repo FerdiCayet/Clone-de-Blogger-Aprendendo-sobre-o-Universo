@@ -1,0 +1,88 @@
+/*Mude o tamanho do seu navegador será aplicável a dispositivos com max-width 650px*/
+@media (max-width: 650px){
+    nav{ visibility: hidden; }
+    header, section{
+        width: 100%;
+    }
+    header img{ width: inherit; }
+    main{
+        display: block;
+        width: 100%;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+        border-bottom-color: transparent;
+    }
+    .info-date{
+        color: #fff;
+    }
+    .header-date, .post-title{
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+    }
+    .post-title a:link {
+        color: #007f00;
+    }
+    .post-title a:visited {
+        text-decoration: none;
+        color: #00ff00;
+    }
+    .post-title a:hover {
+        text-decoration: underline;
+        color: #cc0000;
+    }
+    .post-image{ margin-left: 10px; }
+    .post-image img{
+        width: 100px;
+        height: 100px;
+        background-color: transparent;
+        object-fit: cover;
+    }
+    .post-image legend{ display: none; }
+    .post-content{
+        margin-left: 105px;
+        margin-top: -95px;
+    }
+    .post-content p{
+        text-align: left;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .post-font, .footer-info, aside{
+        display: none;
+    }
+    .mobileWeb{
+        display: block;
+        /* position: relative; */
+        height: 50px;
+    }
+    .btnGreen{
+        /*position: relative;
+        top: 5;
+        left: 250;
+        margin-left: 15px;
+        margin-right: 50px; */
+        margin-top: 10px;
+        display: inline-block;
+        width: max-content;
+        background-color: #09a02f;
+        border-radius: 3px;
+        color: white !important;
+        padding: 4px;
+    }
+    .btnGreen:hover{
+        text-decoration: none;
+    }
+    footer p{
+        position: static;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .widget-info, .pager-posters, .assina-page, .widget-container{
+        display: none;
+    }
+}
